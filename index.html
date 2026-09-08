@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Wumi's Locust Beans</title>
+
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Wumi's Locust Beans</h1>
+            <p>Fresh & Quality Locust Beans</p>
+        </header>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href= "#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <a href="#cart" class="cart-link">Cart 🛒 <span id="cart-count">0</span></a>
+        </nav>
+
+        <section class="hero" id="home">
+          <h2>Authentic  Taste. Quality Locust Beans</h2>
+        
+          <p>
+            Fresh and dried locust beans, carefully prepared for delicious traditional meals. 
+          </p>
+
+          <a class="order-btn"
+          href="https://wa.me/2348088003988" target="_blank" rel="noopener noreferrer">
+              Order on whatsapp
+        </a>
+
+        <a class="shop-btn" href="#products">
+            Shop Now 🛒
+        </a>
+        
+        </section>
+        <section class="product" id="products">
+
+            <h2>Our Products🫘🫘</h2>
+
+            <div class="product-container">
+
+                <div class="product-card">
+                    <span class="stock-badge">✓ Available</span>
+                    <img src="images/iru-200.jpg" alt="locust beans in a 200 pack">
+                    <h3><span class="price">₦200</span> Locust Beans</h3>
+                    <p>Quality locust beans in a convenient ₦200 pack.</p>
+                    <div class="quantity">
+                        <label>Quantity</label>
+                        <input type="number" id="iru-200-quantity" value="1" min="1">
+                    </div>
+                    <button type="button" onclick="addpackToCart('₦200 Locust Beans',200, 'iru-200-quantity')">
+                        Add to Cart 🛒
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <span class="stock-badge">✓ Available</span>
+                    <img src="images/iru-500.jpg" alt="locust beans in a 500 pack">
+                    <h3><span class="price">₦500</span> Locust Beans</h3>
+                    <p>Quality locust beans in a convenient ₦500 pack.</p>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" id="iru-500-quantity" value="1" min="1">
+                    </div>
+                    <button type="button" onclick="addpackToCart('₦500 Locust Beans',500,'iru-500-quantity')">
+                        Add to cart 🛒
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <span class="stock-badge">✓ Available</span>
+                    <img src="images/iru-1000.jpg" alt="locust beans in a 1000 pack">
+                    <h3><span class="price">₦1,000</span> Locust Beans</h3>
+                    <p>Quality locust beans in a convenient ₦1,000 pack.</p>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" id="iru-1000-quantity" value="1" min="1">
+                    </div>
+                    <button type="button" onclick="addpackToCart('₦1,000 Locust Beans',1000,'iru-1000-quantity')">
+                        Add to cart 🛒
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <span class="stock-badge">✓ Available</span>
+                    <img src="images/iru-1500.jpg" alt="locust beans in a 1500 pack">
+                    <h3><span class="price">₦1,500</span> Locust Beans</h3>
+                    <p>Quality locust beans in a convenient ₦1,500 pack.</p>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" id="iru-1500-quantity" value="1" min="1">
+                    </div>
+                    <button type="button" onclick="addpackToCart('₦1,500 Locust Beans',1500,'iru-1500-quantity')">
+                        Add to cart 🛒
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <span class="stock-badge">✓ Available</span>
+                    <img src="images/iru-2000.jpg" alt="locust beans in a 2000 pack">
+                    <h3><span class="price">₦2,000</span> Locust Beans</h3>
+                    <p>Quality locust beans in a convenient ₦2,000 pack.</p>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" id="iru-2000-quantity" value="1" min="1">
+                    </div>
+                    <button type="button" onclick="addpackToCart('₦2,000 Locust Beans',2000,'iru-2000-quantity')">
+                        Add to cart 🛒
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <span class="stock-badge">✓ Available</span>
+                    <img src="images/iru-3000.jpg" alt="locust beans in a 3000 pack">
+                    <h3><span class="price">₦3,000</span> Locust Beans</h3>
+                    <p>Quality locust beans in a convenient ₦3,000 pack.</p>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" id="iru-3000-quantity" value="1" min="1">
+                    </div>
+                    <button type="button" onclick="addpackToCart('₦3,000 Locust Beans',3000,'iru-3000-quantity')">
+                        Add to cart 🛒
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <span class="stock-badge">✓ Available</span>
+                    <img src="images/iru-5000.jpg" alt="locust beans in a 5000 pack">
+                    <h3><span class="price">₦5,000</span> Locust Beans</h3>
+                    <p>Quality locust beans in a convenient ₦5,000 pack.</p>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" id="iru-5000-quantity" value="1" min="1">
+                    </div>
+                    <button type="button" onclick="addpackToCart('₦5,000 Locust Beans',5000,'iru-5000-quantity')">
+                        Add to cart 🛒
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+
+            <h2>Contact Us</h2>
+            <p>📞08088003988</p>
+            <p>📍command Road, Lagos state</p>
+        </section>
+
+        <section class="cart" id="cart">
+            <h2>🛒 Your cart</h2>
+            <div id="cart-status" class="cart-status" aria-live="polite">Your cart is empty.</div>
+            <div id="empty-cart-message" class="empty-cart-message">Your cart is empty. Add a pack to begin your order.</div>
+
+            <div id="cart-items" class="cart-items"></div>
+
+            <div class="order-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong>₦<span id="subtotal">0</span></strong>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <strong>₦<span id="cart-total">0</span></strong>
+                </div>
+            </div>
+
+            <div class="customer-details">
+                <h3>Customer Details</h3>
+                <p class="checkout-note">Please fill in your details below so we can send your order directly to WhatsApp.</p>
+
+                <label>
+                    Name
+                    <input type="text" id="customer-name" placeholder="Enter your name">
+                </label>
+
+                <label>
+                    Phone
+                    <input type="tel" id="customer-phone" placeholder="Enter your phone number">
+                </label>
+
+                <label>
+                    Delivery Address
+                    <textarea id="customer-address" placeholder="Enter your address" rows="4"></textarea>
+                </label>
+            </div>
+
+            <button class="checkout-btn" onclick="checkoutWhatsapp()">
+                Order on WhatsApp
+            </button>
+        </section>
+
+        <section class="about" id="about">
+
+            <img src="images/general-iru.jpg" alt="freshly processed locust beans">
+
+            <h2>About wumi's Locust Beans</h2>
+
+            <p>
+                Welcome to Wumi's locust Beans!
+                we provide quality fresh and dried locust beans
+                to add that delicious, authentic Nigerian flavour 
+                to your favourite meals.
+            </p>
+
+            <p>
+                Whether you are cooking soup, stew or any of your
+                favourite traditional dishes, we've got you covered.
+            </p>
+
+        </section>
+
+        <footer>
+            <p>@ 2026 Wumi's Locust Beans</p>
+        </footer>
+
+<button type="button" class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
+        <script src="script.js"></script>
+
+
+        </body>
+        </html>
